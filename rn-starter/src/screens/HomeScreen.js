@@ -5,11 +5,19 @@ import { TouchableOpacity } from "react-native-gesture-handler";
 const HomeScreen = ({ navigation }) => {
   return (
     <View>
-      <Text style={styles.text}>What's up?! Is it working on both? Maybe...</Text>
+      <Text style={styles.text}>This is the Home Page</Text>
       <Button
         title="Go to Components Demo"
         onPress={() => navigation.navigate('Components')} />
-      <Button onPress={() => navigation.navigate('List')} title="Go to List Demo" />
+      <Button
+        onPress={() => navigation.navigate('List')}
+        title="Go to List Demo" />
+      <Button
+        onPress={() => navigation.navigate('Image')}
+        title="Go to ImageScreen Demo" />
+      <Button
+        onPress={() => navigation.navigate('Counter')}
+        title="Go to CounterScreen" />
     </View>
   )
 };
